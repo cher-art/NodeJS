@@ -26,10 +26,10 @@ async function removeContact(contactId) {
 
 async function addContact(name, email, phone) {
   const contacts = await listContacts();
-  let nextId = 0;
-  contacts.forEach((contact) => (nextId = contact.id));
+  let Id = 0;
+  contacts.forEach((contact) => (Id = contact.id));
   const newContact = {
-    id: nextId + 1,
+    id: Id + 1,
     name,
     email,
     phone,
