@@ -38,22 +38,6 @@ async function removeContact(contactId) {
 }
 
 async function addContact(name, email, phone) {
-  // // const contacts = await listContacts();
-  // const contacts = fs
-  //   .readFile(contactsPath, "utf-8")
-  //   .then((data) => JSON.parse(data));
-  // // let Id = 0;
-  // // contacts.forEach((contact) => (Id = contact.id));
-  // const newContact = {
-  //   // id: Id + 1,
-  //   name,
-  //   email,
-  //   phone,
-  // };
-  // const newContactsList = [...contacts, newContact];
-  // const newContactJson = JSON.stringify(newContactsList);
-  // fs.writeFile(contactsPath, newContactJson);
-  // return contacts;
   try {
     fs.readFile(contactsPath, "utf-8")
       .then((data) => JSON.parse(data))
