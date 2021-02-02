@@ -29,7 +29,7 @@ module.exports = class ContactsServer {
     this.server.use(morgan("dev"));
   }
   initRoutes() {
-    this.server.use("/contacts", contactsContacts);
+    this.server.use("api/contacts", contactsContacts);
   }
   initErrorHandling() {
     this.server.use((err, req, res, next) => {
