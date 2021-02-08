@@ -1,3 +1,3 @@
-const ContactsServer = require("./server.js");
+import { ContactsServer } from "./server.js";
 
 new ContactsServer().start();
